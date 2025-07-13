@@ -1,0 +1,3 @@
+/home/phantom/Desktop/bankApp/build/CMakeFiles/minibank.dir
+/home/phantom/Desktop/bankApp/build/CMakeFiles/edit_cache.dir
+/home/phantom/Desktop/bankApp/build/CMakeFiles/rebuild_cache.dir

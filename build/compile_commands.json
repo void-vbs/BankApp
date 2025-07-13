@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/phantom/Desktop/bankApp/build",
+  "command": "/usr/bin/g++ -I/home/phantom/Desktop/bankApp/include -g -std=c++20 -o CMakeFiles/minibank.dir/main.cpp.o -c /home/phantom/Desktop/bankApp/main.cpp",
+  "file": "/home/phantom/Desktop/bankApp/main.cpp",
+  "output": "CMakeFiles/minibank.dir/main.cpp.o"
+},
+{
+  "directory": "/home/phantom/Desktop/bankApp/build",
+  "command": "/usr/bin/g++ -I/home/phantom/Desktop/bankApp/include -g -std=c++20 -o CMakeFiles/minibank.dir/src/user.cpp.o -c /home/phantom/Desktop/bankApp/src/user.cpp",
+  "file": "/home/phantom/Desktop/bankApp/src/user.cpp",
+  "output": "CMakeFiles/minibank.dir/src/user.cpp.o"
+},
+{
+  "directory": "/home/phantom/Desktop/bankApp/build",
+  "command": "/usr/bin/g++ -I/home/phantom/Desktop/bankApp/include -g -std=c++20 -o CMakeFiles/minibank.dir/src/account.cpp.o -c /home/phantom/Desktop/bankApp/src/account.cpp",
+  "file": "/home/phantom/Desktop/bankApp/src/account.cpp",
+  "output": "CMakeFiles/minibank.dir/src/account.cpp.o"
+},
+{
+  "directory": "/home/phantom/Desktop/bankApp/build",
+  "command": "/usr/bin/g++ -I/home/phantom/Desktop/bankApp/include -g -std=c++20 -o CMakeFiles/minibank.dir/src/transaction.cpp.o -c /home/phantom/Desktop/bankApp/src/transaction.cpp",
+  "file": "/home/phantom/Desktop/bankApp/src/transaction.cpp",
+  "output": "CMakeFiles/minibank.dir/src/transaction.cpp.o"
+},
+{
+  "directory": "/home/phantom/Desktop/bankApp/build",
+  "command": "/usr/bin/g++ -I/home/phantom/Desktop/bankApp/include -g -std=c++20 -o CMakeFiles/minibank.dir/src/bankdb.cpp.o -c /home/phantom/Desktop/bankApp/src/bankdb.cpp",
+  "file": "/home/phantom/Desktop/bankApp/src/bankdb.cpp",
+  "output": "CMakeFiles/minibank.dir/src/bankdb.cpp.o"
+}
+]

@@ -1,0 +1,7 @@
+# ninja log v6
+1	16	1752376591391632283	CMakeFiles/minibank.dir/src/account.cpp.o	d71098f13f279cf5
+1	18	1752376591391764817	CMakeFiles/minibank.dir/src/transaction.cpp.o	a80460d34459d5ce
+1	18	1752376591391869817	CMakeFiles/minibank.dir/src/bankdb.cpp.o	92677d50e92f3aa3
+0	434	1752376591389513700	CMakeFiles/minibank.dir/main.cpp.o	3981a9c3c9702c31
+1	853	1752376591390513717	CMakeFiles/minibank.dir/src/user.cpp.o	daa2e8dc2a76103d
+853	915	1752376592242565660	bin/minibank	5d8b77f596721612
