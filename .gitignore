@@ -1,0 +1,27 @@
+# compilado
+build/
+bin/
+*.o
+*.obj
+*.exe
+*.out
+
+# config personal
+.vscode/settings.json
+.vscode/tasks.json
+
+# DB
+data/
+*.bin
+
+#linux
+*~
+.Ds_Store
+Thumbs.db
+
+# archivos de Cmake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile

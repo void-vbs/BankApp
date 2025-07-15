@@ -1,21 +1,12 @@
 #include <iostream>
-#include "include/account.hpp"
+#include "transaction.hpp"
 
 int main() {
-    Account acc{"0000001", "Admin", 100000.0};
-    
-    std::cout << acc.to_string() << "\n";
-    acc.depositar(50000);
-    std::cout << "Después de depositar: " << acc.to_string() << "\n";
+    Transaction t1{"012345", "ACC001", "deposito", 50000};
+    Transaction t2{"012346", "ACC002", "retiro", 30000};
 
-    try{
-        acc.retirar(200000);
-    } catch (const std::exception& e) {
-        std::cerr << "Error al retirar: " << e.what() << "\n";
-    }
-
-    acc.retirar(30000);
-    std::cout << "Despues de retirar 30.000 Gs: " << acc.to_string() << "\n";
-    return 0;
-
+    std::cout << t1.to_string() << std::endl;
+    std::cout << t2.to_string() << std::endl;
+  
+return 0;
 }
