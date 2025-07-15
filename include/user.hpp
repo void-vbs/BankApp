@@ -3,16 +3,18 @@
 
 class User {
 public:
-    User(std::string id, std::string name, std::string plainPin);
+    User(std::string id, std::string nombre, std::string apellido, std::string plainPin);
 
     const std::string& getId()   const { return id_; }
-    const std::string& getName() const { return name_; }
+    const std::string& getName() const { return nombre_; }
 
     bool verifyPin(const std::string& plainPin) const;
+    std::string to_string() const;
 
 private:
     std::string id_;
-    std::string name_;
+    std::string nombre_;
+    std::string apellido_;
     std::string salt_;
     std::string pinHash_;
 

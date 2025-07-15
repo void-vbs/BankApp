@@ -18,11 +18,17 @@ std::string User::hashPin(const std::string& pin, const std::string& salt) {
 
 }
 
-User::User(std::string id, std::string name, std::string plainPin)
-    : id_(std::move(id)), name_(std::move(name)) {
+User::User(std::string id, std::string nombre, std::string apellido, std::string plainPin)
+    : id_(std::move(id)), nombre_(std::move(nombre)), apellido_(std::move(apellido)) {
         salt_ = randomSalt(16);
         pinHash_ = hashPin(plainPin, salt_);
     }
+
+    std::string User::to_string() const {
+    std::ostringstream oss;
+    oss << id_ << " - " << nombre_ << " " << apellido_;
+    return oss.str();
+}
 
 bool User::verifyPin(const std::string& plainPin) const {
     return hashPin(plainPin, salt_) == pinHash_;
