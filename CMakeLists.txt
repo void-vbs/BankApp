@@ -14,6 +14,8 @@ add_executable(minibank
     src/account.cpp
     src/transaction.cpp
     src/bankdb.cpp
+    src/session_manager.cpp
+    src/user_auth.cpp
 )
 
 target_include_directories(minibank PRIVATE include)

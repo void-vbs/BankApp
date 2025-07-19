@@ -27,6 +27,7 @@ User::User(std::string id, std::string nombre, std::string apellido, std::string
     std::string User::to_string() const {
     std::ostringstream oss;
     oss << id_ << " - " << nombre_ << " " << apellido_;
+    if (isAdmin_) oss << " [Admin]";
     return oss.str();
 }
 

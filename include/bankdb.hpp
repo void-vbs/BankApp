@@ -10,13 +10,18 @@ class BankDB {
     public:
         BankDB();
 
+        std::string generateUniqueUserId();
+        void addUser(const std::shared_ptr<User>& user);
+        
         std::shared_ptr<User> crearUsuario(const std::string& nombre, const std::string& apellido, const std::string& pin);
         std::shared_ptr<Account> crearCuenta(const std::string& userId, double saldoInicial = 0.0);
         std::shared_ptr<Transaction> registrarTransaccion(const std::string& accountId, const std::string& tipo, double monto);
 
         std::shared_ptr<User> getUsuario(const std::string& id) const;
         std::shared_ptr<Account> getCuenta(const std::string& id) const;
-    
+        
+        void initDefaultAdmin();
+
     private:
         std::unordered_map<std::string, std::shared_ptr<User>> usuarios_;
         std::unordered_map<std::string, std::shared_ptr<Account>> cuentas_;

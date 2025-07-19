@@ -44,3 +44,19 @@ std::shared_ptr<Account> BankDB::getCuenta(const std::string& id) const {
     auto it = cuentas_.find(id);
     return (it != cuentas_.end()) ? it->second : nullptr;
 }
+
+std::string BankDB::generateUniqueUserId() {
+    return generarId("", userCounter_++);
+}
+
+void BankDB::addUser(const std::shared_ptr<User>& user) {
+    usuarios_[user->getId()] = user;
+}
+
+void BankDB::initDefaultAdmin() {
+    if (!getUsuario("Admin")) {
+        auto admin = std::make_shared<User>("Admin", "Admin", "Master", "0000");
+        admin->setAdmin(true);
+        addUser(admin);
+    }
+}
